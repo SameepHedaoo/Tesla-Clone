@@ -12,9 +12,12 @@ function Section(props) {
                     <LeftButton>
                         {props.leftBtn}
                     </LeftButton>
-                    <RightButton>
-                        {props.rightBtn}
-                    </RightButton>
+                    {props.rightBtn &&
+                        <RightButton>
+                            {props.rightBtn}
+                        </RightButton>
+                    }
+
                 </ButtonGroup>
                 <DownArrow src="/images/down-arrow.svg" />
             </Buttons>
@@ -55,7 +58,7 @@ const ButtonGroup = styled.div`
 const LeftButton = styled.div`
     height:40px;
     background-color: rgba(23,26,32,0.8);
-    width: 256px;
+    width: 240px;
     color:white;
     display:flex;
     justify-content: center;
@@ -64,12 +67,14 @@ const LeftButton = styled.div`
     opacity:0.85;
     text-transform:uppercase;
     font-size: 12px;
+    font-weight: bold;
     margin: 10px;
 `
 const RightButton = styled(LeftButton)`
     background: white;
     opacity: 0.65;
     color: black;
+    font-weight: bold;
 `
 const DownArrow = styled.img`
     margin-top: 20px;
