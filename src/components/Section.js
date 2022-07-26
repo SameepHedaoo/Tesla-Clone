@@ -35,6 +35,11 @@ function Section(props) {
 export default Section
 
 const Wrap = styled.div`
+    h1
+    {
+        font-size: 50px;
+        
+    }
     width: 100vw;
     height: 100vh;
     background-size:cover;

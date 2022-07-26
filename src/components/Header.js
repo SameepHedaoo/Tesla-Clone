@@ -4,7 +4,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 
 function Header() {
-    const [burgerStatus, setBurgerStatus] = useState(true);
+    const [burgerStatus, setBurgerStatus] = useState(false);
 
     return (
         <Container>
@@ -110,9 +110,6 @@ const RightMenu = styled.div`
         padding: 0px 10px;
         margin-right: 10px;
     }
-`
-const CustomMenu = styled(MenuIcon)`
-    cursor: pointer
 `
 const BurgerNav = styled.div`
     position:fixed;
